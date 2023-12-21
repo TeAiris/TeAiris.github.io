@@ -1,11 +1,11 @@
-<div id="adobe-dc-view" style="height: 360px; width: 500px;"></div>
+<div id="adobe-dc-view" style="width: 800px;"></div>
 <script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
 <script type="text/javascript">
 	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
-		var adobeDCView = new AdobeDC.View({clientId: "a9135bc193db4a2988a19b99d957cbd9", divId: "adobe-dc-view"});
+		var adobeDCView = new AdobeDC.View({clientId: "1f6c5eba852748e29e8e56d6b1cdef1b", divId: "adobe-dc-view"});
 		adobeDCView.previewFile({
-			content:{promise: "https://github.com/TeAiris/TeAiris.github.io/blob/main/String%20Quartet%20revised%20Score.pdf"},
-			metaData:{fileName: "String Quartet"}
-		}, {embedMode: "SIZED_CONTAINER"});
+			content:{location: {url: "https://drive.google.com/file/d/0B5NKuqkRd8XmZU9fTE42bG4xcmc/view?usp=sharing&resourcekey=0-qUtozLQCgwVYylPgW2K-LA"}},
+			metaData:{fileName: "String Quartet.pdf"}
+		}, {embedMode: "IN_LINE"});
 	});
 </script>
